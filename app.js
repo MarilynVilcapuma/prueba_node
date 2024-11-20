@@ -27,12 +27,12 @@ let pool = mysql.createPool({
 
 // Manejo de la solicitud POST del formulario
 app.post('/submit-form', (req, res) => {
-    const { nombre, apellidos, telefono, email,opcion_selecionada, comentario } = req.body;
+    const { nombre, apellido, telefono, email,seleccionar, comentario } = req.body;
 
     // Consulta SQL para insertar los datos del formulario en la base de datos
-    const query = 'insert into registro (nombre, apellido, telefono, email, opcion_seleccionada, comentario) VALUES (?, ?, ?, ?, ?)';
+    const query = 'insert into registro (nombre, apellido, telefono, email, seleccionar, comentario) VALUES (?, ?, ?, ?, ?,?)';
 
-    pool.query(query, [nombre, apellidos, telefono, email, opcion_selecionada,comentario], (err, result) => {
+    pool.query(query, [nombre, apellido, telefono, email, seleccionar,comentario], (err, result) => {
         if (err) {
             console.error('Error al insertar datos: ' + err.stack);
             res.status(500).send('Ocurrió un error al procesar tu consulta.');

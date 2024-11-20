@@ -91,72 +91,72 @@
         <section>
             <h1 class="title">Registrate</h1>
 
-            <form id="form">
+            <form id="form" method="POST" action="/submit-form">
+                <label for="nombre">Nombre</label>
                 <div class="input-control">
-                    <!--     <label for="">Nombre</label> -->
-                    <input type="text" placeholder="Nombre" id="username" />
+                    <input type="text" placeholder="Your name" id="username" name="nombres" />
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-
-                <!--Agregando dos validaciones last name y phone-->
+            
                 <div class="input-control">
-                    <!-- <label for="">Apellido</label> -->
-                    <input type="text" placeholder="Apellido" id="Lastname" />
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" placeholder="Your last name" id="Lastname" name="apellidos" />
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-
+            
                 <div class="input-control">
-                    <!--    <label for="">Telefono</label> -->
-                    <input type="text" placeholder="Telefono" id="phone" />
+                    <label for="telefono">Telefono</label>
+                    <input type="text" placeholder="phone" id="phone" name="telefono" />
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-
+            
                 <div class="input-control">
-                    <!--    <label for="">Email</label> -->
-                    <input type="email" placeholder="email" id="email" />
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="info@email.com" id="email" name="correo" />
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
-
+            
                 <div class="input-control">
-                    <!--     <label for="Donación">Seleccionar Proyecto</label> -->
-                    <select name="donation" id="donation">
+                    <label for="seleccionar">Seleccionar</label>
+                    <select name="seleccion_objetos" id="donation">
                         <option value="" disabled selected>Selecciona una opción</option>
                         <option value="Alimentos">Alimentos</option>
-                        <option value="Alimentos">Ropa</option>
-                        <option value="Alimentos">Electrodomesticos</option>
-                        <option value="Alimentos">Utiles Escolares</option>
+                        <option value="Ropa">Ropa</option>
+                        <option value="Electrodomesticos">Electrodomésticos</option>
+                        <option value="Utiles Escolares">Útiles Escolares</option>
                     </select>
-
                     <small>Error message</small>
                 </div>
-
-                <div id="donation">
-                    <!--    <label for="comments">¿Quieres dejar un comentario?</label> -->
-                    <textarea id="comments" name="comments" rows="4" cols="45"
-                        placeholder="Escribe tus comentarios aquí"></textarea>
+            
+                <div>
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comments" name="comentario" rows="4" cols="45" placeholder="Escribe tus comentarios aquí"></textarea>
                 </div>
-
-                <button>Submit</button>
+            
+                <button type="submit">Enviar</button>
             </form>
+            
+            
 
             <div class="message hidden">
                 <h1>Registro exitoso!🎉</h1>
             </div>
 
         </section>
+            
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/public/Slider.js"></script>
-    <script src="public/"></script>
+    <script src="/public/sript/validation.js"></script>
     <script src="/public/sript/sript.js"></script>
 </body>
 
