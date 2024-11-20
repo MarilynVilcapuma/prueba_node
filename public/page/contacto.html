@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/public/scc/form2.css">
+    <link rel="stylesheet" href="/public/scc/style.css">
+    <title>Donaciones</title>
+</head>
+
+<body>
+    <div class="hero">
+        <header>
+             <ul>
+                 <li><a href="/index.html">Inicio</a></li>
+                 <li><a href="#">Nosotros</a></li>
+                 <li><a href="#">Productos</a></li>
+                 <li><a href="#">Donaciones</a></li>
+                 <li><a href="#">Explora los ODS</a></li>
+             </ul>
+        </header>
+         
+        <div class="content">
+            <h1>"Dona hoy, transforma mañana"</h1>
+            <a href="#">Explore</a>
+        </div>
+
+    </div>
+
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Transforma vidas con tu donación</h2>
+            <p>Ayuda a Erradicar la Pobreza Hoy: Tu donación puede transformar vidas. Con solo un pequeño aporte,
+                estarás empoderando a familias vulnerables, brindándoles acceso a recursos esenciales como educación,
+                salud y oportunidades laborales. <br> Juntos, podemos construir un mundo más equitativo y sostenible.
+                <strong>Dona ahora y sé parte del cambio</strong>.
+            </p>
+
+            <!--Diseño de fotos-->
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://img.freepik.com/foto-gratis/voluntarios-mascarillas-medicas-guantes-preparando-cajas-donacion-provisiones_23-2148732677.jpg?semt=ais_hybrid" />
+                        <div class="cost">Proyectos</div>
+                        <div class="overlay">
+                            <h1>Dona Alimentos</h1>
+                            <div class="ratings">
+                                <span>Tú tambien sumate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://media.istockphoto.com/id/1372559778/es/foto/una-mujer-millennial-prepara-el-env%C3%ADo-de-algunas-prendas-en-su-nueva-tienda-online.jpg?s=612x612&w=0&k=20&c=WduN2zGR8BmpJbG3Rr6VKkW5Lnyc3vkyjlQvcni67Dg=" />
+                        <div class="cost">Proyectos</div>
+                        <div class="overlay">
+                            <h1>Dona Prendas</h1>
+                            <div class="ratings">
+                                <span>Tú tambien sumate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://media.telemundo49.com/2021/07/donacion-utiles-escolares.jpg?quality=85&strip=all&fit=1200%2C675" />
+                        <div class="cost dark-text">Proyectos</div>
+                        <div class="overlay">
+                            <h1>Dona Utiles escolare<h1>
+                                <div class="ratings">
+                                    <span>Tú tambien sumate</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://mercadosolucion.com/wp-content/uploads/2024/07/PC-NOTEBOOKS.jpg" />
+                        <div class="cost dark-text">Proyectos</div>
+                        <div class="overlay">
+                            <h1>Dona R.Tecnologicos</h1>
+                            <div class="ratings">
+                                <span>Tú tambien sumate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section>
+            <h1 class="title">Registrate</h1>
+
+            <form id="form">
+                <div class="input-control">
+                    <!--     <label for="">Nombre</label> -->
+                    <input type="text" placeholder="Nombre" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <!--Agregando dos validaciones last name y phone-->
+                <div class="input-control">
+                    <!-- <label for="">Apellido</label> -->
+                    <input type="text" placeholder="Apellido" id="Lastname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="input-control">
+                    <!--    <label for="">Telefono</label> -->
+                    <input type="text" placeholder="Telefono" id="phone" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="input-control">
+                    <!--    <label for="">Email</label> -->
+                    <input type="email" placeholder="email" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="input-control">
+                    <!--     <label for="Donación">Seleccionar Proyecto</label> -->
+                    <select name="donation" id="donation">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Alimentos">Alimentos</option>
+                        <option value="Alimentos">Ropa</option>
+                        <option value="Alimentos">Electrodomesticos</option>
+                        <option value="Alimentos">Utiles Escolares</option>
+                    </select>
+
+                    <small>Error message</small>
+                </div>
+
+                <div id="donation">
+                    <!--    <label for="comments">¿Quieres dejar un comentario?</label> -->
+                    <textarea id="comments" name="comments" rows="4" cols="45"
+                        placeholder="Escribe tus comentarios aquí"></textarea>
+                </div>
+
+                <button>Submit</button>
+            </form>
+
+            <div class="message hidden">
+                <h1>Registro exitoso!🎉</h1>
+            </div>
+
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/public/Slider.js"></script>
+    <script src="public/"></script>
+    <script src="/public/sript/sript.js"></script>
+</body>
+
+</html>
